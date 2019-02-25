@@ -18,28 +18,69 @@ const example = {
 }
 
 // Write your intern objects here:
+const one = {
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F"
+}
+
+const two = {
+  id: 2,
+  name: "Kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "M",
+  speak: function() {
+    return "Hello, my name is Kennan!";
+  }
+};
+const three = {
+  id: 3,
+  name: "Keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "M"
+}
+
+const four = {
+  id: 4,
+  name: "Gannie",
+  email: "gmartinson3@illinois.edu",
+  gender: "M"
+}
+
+const five = {
+  id: 5,
+  name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F",
+  multiplyNums: function multiply(num1, num2) {
+    return num1 * num2;
+  }
+}
+
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(one.name);
 // Kennan's ID
-
+console.log(two.id);
 // Keven's email
-
+console.log(three.email);
 // Gannie's name
-
+console.log(four.name);
 // Antonietta's Gender
+console.log(five.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-
+console.log(two.speak);
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+console.log(five.multiplyNums(3,4));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
@@ -48,11 +89,7 @@ const example = {
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
-
-const parent = {}
-
 // Log the parent object's name
-
 // Log the child's age
 
 // Log the name and age of the grandchild
